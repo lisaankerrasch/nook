@@ -128,6 +128,10 @@ footer {
   text-decoration: none;
 }
 
+.footer-container a:hover {
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 50px;
