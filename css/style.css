@@ -60,7 +60,7 @@ nav {
   z-index: 2;
 }
 
-nav a {
+a.nav-link {
   display: block;
   color: black;
   font-family: "Fira sans", sans-serif;
@@ -151,7 +151,7 @@ footer {
     display: block;
   }
 
-  nav a {
+  a.nav-link {
     display: inline;
     padding-left: 70px;
   }
@@ -219,7 +219,7 @@ footer {
     z-index: 1;
   }
 
-  .nav a {
+  a.nav-link {
     padding-left: 70px;
   }
 
