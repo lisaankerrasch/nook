@@ -153,7 +153,7 @@ footer {
 
   a.nav-link {
     display: inline;
-    padding-left: 70px;
+    margin-left: 70px;
   }
 
   .menu {
@@ -217,10 +217,6 @@ footer {
     top: 85px;
     right: 127px;
     z-index: 1;
-  }
-
-  a.nav-link {
-    padding-left: 70px;
   }
 
   .grey-box {
