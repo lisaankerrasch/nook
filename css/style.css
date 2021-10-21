@@ -33,7 +33,8 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 32px;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 nav {
@@ -131,7 +132,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 70px;
-  margin-bottom: 130px;
+  margin-bottom: 70px;
 }
 
 .item {
@@ -141,12 +142,20 @@ button:hover {
 .beige img {
   border: 20px solid var(--beige) !important;
 }
+.grey img {
+  border: 20px solid var(--primary-color) !important;
+}
 
 .item img {
   width: 280px;
   height: 350px;
   object-fit: cover;
   border: 20px solid var(--green);
+  cursor: pointer;
+}
+
+.item img:hover {
+  border: 20px solid black !important;
 }
 
 footer {
@@ -156,7 +165,7 @@ footer {
 }
 
 .footer-container {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .footer-container a:hover {
@@ -232,6 +241,7 @@ footer {
   .shop-container {
     flex-direction: row;
     gap: 40px;
+    margin-bottom: 130px;
   }
   .footer-container {
     display: flex;
