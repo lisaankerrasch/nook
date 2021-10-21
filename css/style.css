@@ -10,6 +10,7 @@ body {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -24,10 +25,15 @@ body {
   font-family: "Fira sans", sans-serif;
 }
 
-h2 {
+h1 {
   font-family: "Playfair Display", serif;
   font-size: 30px;
   font-weight: 200;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
 }
 
 nav {
@@ -36,6 +42,7 @@ nav {
 
 .nav-container,
 .container,
+.shop-container,
 .footer-container {
   width: 90%;
   max-width: 1200px;
@@ -62,7 +69,6 @@ nav {
 
 a.nav-link {
   display: block;
-  color: black;
   font-family: "Fira sans", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
@@ -117,6 +123,32 @@ button:hover {
   color: white;
 }
 
+/* Shop */
+
+.shop-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 130px;
+}
+
+.item {
+  margin: 0 auto;
+}
+
+.beige img {
+  border: 20px solid var(--beige) !important;
+}
+
+.item img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border: 20px solid var(--green);
+}
+
 footer {
   flex-shrink: 0;
   background-color: var(--green);
@@ -127,16 +159,12 @@ footer {
   padding: 20px 0;
 }
 
-.footer-container a {
-  color: black;
-}
-
 .footer-container a:hover {
   color: white;
 }
 
 @media screen and (min-width: 768px) {
-  h2 {
+  h1 {
     font-size: 50px;
   }
   .nav-container {
@@ -199,6 +227,11 @@ footer {
     width: 205px;
     top: 406px;
     right: 80px;
+  }
+
+  .shop-container {
+    flex-direction: row;
+    gap: 40px;
   }
   .footer-container {
     display: flex;
